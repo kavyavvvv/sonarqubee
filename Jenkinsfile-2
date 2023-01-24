@@ -1,6 +1,6 @@
 pipeline {
   agent any
-    stages {
+  stages {
     stage('Scan') {
       steps {
         withSonarQubeEnv(installationName: 'sonarqube-8.9.10') { 
